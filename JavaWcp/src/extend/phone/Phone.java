@@ -7,4 +7,9 @@ public interface Phone {
 
     // public abstractが自動で追加される（抽象メソッド）
     void call(String number);
+    
+    // defaultメソッドの宣言
+    default void powerOff() {
+        System.out.println("電源を切ります。");
+    }
 }
